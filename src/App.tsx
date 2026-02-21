@@ -7,16 +7,18 @@ const Nav = () => (
     initial={{ y: -20, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-    className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-6 py-6 md:px-12 bg-bg/80 backdrop-blur-md border-b border-line"
+    className="fixed top-0 left-0 right-0 z-50 px-6 py-6 md:px-12 bg-bg/80 backdrop-blur-md border-b border-line"
   >
-    <div className="text-sm font-medium tracking-tight flex items-center gap-2">
-      <div className="w-2 h-2 rounded-full bg-accent"></div>
-      <span>SR Design</span>
-    </div>
-    <div className="flex gap-6 text-sm font-medium text-muted">
-      <a href="#philosophy" className="hover:text-ink transition-colors">Philosophy</a>
-      <a href="#work" className="hover:text-ink transition-colors">Work</a>
-      <a href="#contact" className="hover:text-ink transition-colors">Contact</a>
+    <div className="max-w-7xl mx-auto w-full flex justify-between items-center">
+      <div className="text-sm font-medium tracking-tight flex items-center gap-2">
+        <div className="w-2 h-2 rounded-full bg-accent"></div>
+        <span>SR Design</span>
+      </div>
+      <div className="flex gap-6 text-sm font-medium text-muted">
+        <a href="#philosophy" className="hover:text-ink transition-colors">Philosophy</a>
+        <a href="#work" className="hover:text-ink transition-colors">Work</a>
+        <a href="#contact" className="hover:text-ink transition-colors">Contact</a>
+      </div>
     </div>
   </motion.nav>
 );
@@ -34,39 +36,41 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-bg/20 via-bg/60 to-bg"></div>
       </div>
 
-      <div className="max-w-4xl relative z-10">
-        <motion.h1 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tighter leading-[1.05]"
-        >
-          Absorb complexity.<br />
-          <span className="text-muted">Deliver clarity.</span>
-        </motion.h1>
-        
-        <motion.p 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-10 text-lg md:text-xl text-muted max-w-2xl leading-relaxed font-light"
-        >
-          I am Surong Ruan, an Interaction & Service Designer orchestrating systems. 
-          I design experience layers that unify fragmented services and scattered knowledge 
-          into single, intent-driven journeys.
-        </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-24"
-        >
-          <a href="#work" className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-muted hover:text-accent transition-colors">
-            <ArrowDown className="w-4 h-4" />
-            Selected Works
-          </a>
-        </motion.div>
+      <div className="max-w-7xl mx-auto w-full relative z-10">
+        <div className="max-w-4xl">
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tighter leading-[1.05]"
+          >
+            Absorb complexity.<br />
+            <span className="text-muted">Deliver clarity.</span>
+          </motion.h1>
+          
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+            className="mt-10 text-lg md:text-xl text-muted max-w-2xl leading-relaxed font-light"
+          >
+            I am Surong Ruan, an Interaction & Service Designer orchestrating systems. 
+            I design experience layers that unify fragmented services and scattered knowledge 
+            into single, intent-driven journeys.
+          </motion.p>
+  
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="mt-24"
+          >
+            <a href="#work" className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-muted hover:text-accent transition-colors">
+              <ArrowDown className="w-4 h-4" />
+              Selected Works
+            </a>
+          </motion.div>
+        </div>
       </div>
       
       {/* Abstract background element inspired by Blue Distortion */}
