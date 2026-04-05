@@ -248,6 +248,9 @@ const Nav = () => (
       <div className="flex gap-6 text-sm font-medium text-muted">
         <a href="#philosophy" className="hover:text-ink transition-colors">Philosophy</a>
         <a href="#work" className="hover:text-ink transition-colors">Work</a>
+        <a href="https://substack.com/@surong" target="_blank" rel="noopener noreferrer" className="hover:text-ink transition-colors flex items-center gap-1">
+          Blog <ArrowUpRight className="w-3 h-3" />
+        </a>
         <a href="#contact" className="hover:text-ink transition-colors">Contact</a>
       </div>
     </div>
@@ -277,7 +280,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
             className="mt-10 text-lg md:text-xl text-muted max-w-2xl leading-relaxed font-light"
           >
-            I am Surong Ruan, an Interaction & Service Designer orchestrating systems. 
+            I am Surong Ruan, an Interaction & Service Designer orchestrating systems across healthcare, enterprise, and 3D spaces. 
             I design experience layers that unify fragmented services and scattered knowledge 
             into single, intent-driven journeys.
           </motion.p>
